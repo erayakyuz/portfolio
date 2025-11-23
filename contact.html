@@ -67,41 +67,47 @@
         
           <hr>
 
-          <form action="#" method="post">
-            <fieldset class="row g-3 mb-3">
-              <legend class="text-uppercase fs-6 fw-bolder pt-3">gegevens</legend>
-              <div class="col-md-6">
-                <label for="firstName" class="form-label">Voornaam <span>*</span></label>
-                <input type="text" class="form-control" id="firstName" required>
-              </div>
-              <div class="col-md-6">
-                <label for="lastName" class="form-label">Achternaam <span>*</span></label>
-                <input type="text" class="form-control" id="lastName" required>
-              </div>
-             <div class="col-12">
-                <label for="mail" class="form-label">E-mail <span>*</span></label>
-                <input type="email" class="form-control" id="mail" required>
-              </div>
-            </fieldset>
+          <form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
 
+  <fieldset class="row g-3 mb-3">
+    <legend class="text-uppercase fs-6 fw-bolder pt-3">gegevens</legend>
 
-            <fieldset class="row g-3 mb-3 mt-3">
-              <legend class="text-uppercase fs-6 fw-bolder pt-3">Let's connect!</legend>
-              <div class="col-12">
-                <label for="subject" class="form-label">Onderwerp <span>*</span></label>
-                <input type="text" class="form-control" id="subject" required>
-              </div>
-             <div class="col-12">
-               <label for="message" class="form-label">Bericht <span>*</span></label>
-               <textarea class="form-control" id="message" name="message" rows="6" placeholder="Schrijf hier je bericht..." required></textarea>
-             </div>
+    <div class="col-md-6">
+      <label for="firstName" class="form-label">Voornaam <span>*</span></label>
+      <input type="text" class="form-control" id="firstName" name="firstName" required>
+    </div>
 
-            </fieldset>
+    <div class="col-md-6">
+      <label for="lastName" class="form-label">Achternaam <span>*</span></label>
+      <input type="text" class="form-control" id="lastName" name="lastName" required>
+    </div>
 
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Verzenden</button>
-            </div>
-          </form>
+    <div class="col-12">
+      <label for="mail" class="form-label">E-mail <span>*</span></label>
+      <input type="email" class="form-control" id="mail" name="email" required>
+    </div>
+  </fieldset>
+
+  <fieldset class="row g-3 mb-3 mt-3">
+    <legend class="text-uppercase fs-6 fw-bolder pt-3">Let's connect!</legend>
+
+    <div class="col-12">
+      <label for="subject" class="form-label">Onderwerp <span>*</span></label>
+      <input type="text" class="form-control" id="subject" name="subject" required>
+    </div>
+
+    <div class="col-12">
+      <label for="message" class="form-label">Bericht <span>*</span></label>
+      <textarea class="form-control" id="message" name="message" rows="6" placeholder="Schrijf hier je bericht..." required></textarea>
+    </div>
+  </fieldset>
+
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Verzenden</button>
+  </div>
+</form>
+
 
         </section>
       </main>
@@ -128,4 +134,5 @@
 </body>
 
 </html>
+
 
