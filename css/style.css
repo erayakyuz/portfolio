@@ -1,0 +1,81 @@
+html,
+body {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+ font-family: 'IBM Plex Mono', monospace;
+  color: #0a0f3d;
+  height: 100%;
+  width: 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #da5e00;
+}
+
+.nav-link:hover {
+    color: #da5e00;
+}
+
+
+.donkerblauw {
+  color: #05104b;
+}
+.oranje {
+  color: #da5e00;
+}
+
+span {
+  color: #da5e00;
+}
+
+.nav-link.active {
+    color: #da5e00;
+}
+
+.navbar {
+  --bs-navbar-hover-color: #da5e00;
+  --bs-navbar-active-color: #da5e00;
+}
+
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #da5e00;
+  --bs-btn-border-color: #243d90;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #05104b;
+  --bs-btn-hover-border-color: #05104b;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #05104b;
+  --bs-btn-active-border-color: #05104b;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #243d90;
+  --bs-btn-disabled-border-color: #243d90;
+}
+
+.navbar-nav .nav-link {
+
+  margin: 50px;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+.project-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.project-big{
+  width: 100%;
+  height: auto;
+ 
+}
