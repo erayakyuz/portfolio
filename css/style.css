@@ -85,5 +85,13 @@ span {
   max-width: 350px
 }
 
+.list-group-item.active {
+    background-color: #da5e00;
+    border-color: #f4660a;
 
-#map { height: 180px; }
+}
+
+.list-group-item {
+  --bs-list-group-action-hover-color: #da5e00;
+  --bs-list-group-action-active-color: #da5e00;
+}
